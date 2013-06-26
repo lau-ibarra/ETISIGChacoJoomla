@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>COM_SPDOWNLOAD</name>
+    <!-- The following elements are optional and free of formatting conttraints -->
+    <creationDate>May 2013</creationDate>
+    <author>SP CYEND</author>
+    <authorEmail>info@cyend.com</authorEmail>
+    <authorUrl>http://www.cyend.com</authorUrl>
+    <copyright>SP CYEND - All rights reserved.</copyright>
+    <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <!--  The version string is recorded in the components table -->
+    <version>3.0.2</version>   
+    <description>SP Download Component</description>
+
+    <!-- Runs on install/uninstall/update; New in 1.6 -->
+    <scriptfile>script.php</scriptfile>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>spdownload.php</filename>
+    </files>
+    <languages folder="language/site">
+        <language tag="en-GB">en-GB.com_spdownload.ini
+        </language>
+    </languages>
+    <media destination="com_spdownload" folder="media">
+        <filename>index.html</filename>
+        <folder>js</folder>
+    </media>
+    <administration>
+        <files folder="admin">
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>spdownload.php</filename>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="language/admin">
+            <language tag="en-GB">en-GB.com_spdownload.ini</language>
+            <language tag="en-GB">en-GB.com_spdownload.sys.ini</language>
+        </languages>
+    </administration>
+</extension>
+

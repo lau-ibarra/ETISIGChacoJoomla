@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.0"
+	client="site"
+	method="upgrade">
+	<name>JElastislide </name>
+	<author>Navjinder Kainthrai</author>
+	<creationDate>Jan 2013</creationDate> 
+	<authorUrl>http://www.navjinder.com</authorUrl> 
+	<authoremail>mailme@navjinder.com</authoremail>
+	<copyright>Copyright (C) Navjinder.com. some rights reserved.</copyright>
+	<license>GNU/GPL license: http://www.gnu.org/copyleft/gpl.html</license>
+	<version>2.2</version>
+	<description>
+	<![CDATA[ 
+<link rel="stylesheet" href="../modules/mod_jelastislide/backend/style.css" type="text/css" />
+<a href="http://demo.navjinder.com/jelastislide-demo" ><img src="../modules/mod_jelastislide/backend/images/logo.png" /></a>
+<p>	<h2>JElastislide</h2> A Joomla Responsive Image Carousel</p>
+<p>Based on Elastislide by <a href="http://tympanus.net/codrops/2011/09/12/elastislide-responsive-carousel/">Codrops</a></p>
+<p>Developed by <a href="http://www.navjinder.com" >Navjinder.com</a></p>
+	]]>
+	</description>
+	<files>
+		<filename module="mod_jelastislide">mod_jelastislide.php</filename>
+		<filename>mod_jelastislide.xml</filename>
+		<filename>index.html</filename>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>vari</folder>
+		<folder>images</folder>
+		<folder>backend</folder>
+	</files>
+    <languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_jelastislide.ini</language>
+	</languages>
+	<media destination="jelastislide">
+        <filename>1.jpg</filename>
+        <filename>2.jpg</filename>
+        <filename>3.jpg</filename>
+        <filename>4.jpg</filename>
+        <filename>5.jpg</filename>
+        <filename>6.jpg</filename>
+        <filename>7.jpg</filename>
+        <filename>8.jpg</filename>
+        <filename>9.jpg</filename>
+        <filename>10.jpg</filename>
+    </media>
+	<help key="JElastislide Responsive Image Crousel" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="jquery"
+					type="list"
+					default="yes"
+					label="MOD_JELASTISLIDE_OPTION_JQUERY_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_JQUERY_DESC">
+					<option	value="yes">MOD_JELASTISLIDE_OPTION_JQUERY_YES</option>
+					<option	value="no">MOD_JELASTISLIDE_OPTION_JQUERY_NO</option>
+				</field>				
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="orientation"
+					type="radio"
+					default="horizontal"
+					label="MOD_JELASTISLIDE_OPTION_ORIENTATION_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_ORIENTATION_DESC">
+					<option	value="vertical">MOD_JELASTISLIDE_OPTION_ORIENTATION_VERTICAL</option>
+					<option	value="horizontal">MOD_JELASTISLIDE_OPTION_ORIENTATION_HORIZONTAL</option>
+				</field>
+				
+				<field
+					name="minValue"
+					type="text"
+					default="3"
+					label="MOD_JELASTISLIDE_OPTION_IMAGEVALUE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_IMAGEVALUE_DESC" />
+
+				<field
+					name="backGround"
+					type="color"
+					default="#cccccc"
+					label="MOD_JELASTISLIDE_COLOR_BACKGROUND_LABEL"
+					description="MOD_JELASTISLIDE_COLOR_BACKGROUND_DESC" />
+					
+				<field
+					name="arrowTheme"
+					type="radio"
+					default="light"
+					label="MOD_JELASTISLIDE_OPTION_ARROW_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_ARROW_DESC">
+					<option	value="light">MOD_JELASTISLIDE_OPTION_ARROW_LIGHT</option>
+					<option	value="dark">MOD_JELASTISLIDE_OPTION_ARROW_DARK</option>
+				</field>
+				
+				<field
+					name="arrowColor"
+					type="color"
+					default="#a6a6a6"
+					label="MOD_JELASTISLIDE_COLOR_ARROW_LABEL"
+					description="MOD_JELASTISLIDE_COLOR_ARROW_DESC" />
+
+			<field type="spacer" hr="true" />
+			
+			<field
+					name="modal"
+					type="radio"
+					default="yes"
+					label="MOD_JELASTISLIDE_OPTION_MODALLINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_MODALLINK_DESC">
+					<option	value="yes">MOD_JELASTISLIDE_OPTION_MODALLINK_MODAL</option>
+					<option	value="no">MOD_JELASTISLIDE_OPTION_MODALLINK_LINK</option>
+				</field>	
+			
+			<field
+					name="largeoption"
+					type="radio"
+					default="no"
+					label="MOD_JELASTISLIDE_OPTION_LARGE_IMAGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_LARGE_IMAGE_DESC">
+					<option	value="yes">MOD_JELASTISLIDE_OPTION_LARGE_IMAGE_DIFFERENT</option>
+					<option	value="no">MOD_JELASTISLIDE_OPTION_LARGE_IMAGE_SAME</option>
+				</field>	
+				
+				<field
+					name="target"
+					type="radio"
+					default="_blank"
+					label="MOD_JELASTISLIDE_OPTION_TARGET_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_TARGET_DESC">
+					<option	value="_blank">MOD_JELASTISLIDE_OPTION_TARGET_NEW</option>
+					<option	value="_self">MOD_JELASTISLIDE_OPTION_TARGET_SELF</option>
+					<option	value="_parent">MOD_JELASTISLIDE_OPTION_TARGET_PARENT</option>
+				</field>
+				
+			<field type="spacer" hr="true" />
+			
+			<field
+					name="credits"
+					type="list"
+					default="yes"
+					label="MOD_JELASTISLIDE_OPTION_CREDITS_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_CREDITS_DESC">
+					<option	value="yes">MOD_JELASTISLIDE_OPTION_CREDITS_YES</option>
+					<option	value="no">MOD_JELASTISLIDE_OPTION_CREDITS_NO</option>
+				</field>	
+			</fieldset>
+			<fieldset name="SLIDE">
+				
+				<field
+					name="file1active"
+					type="radio"
+					default="yes"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE1_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+				<field
+					name="file1"
+					type="media"
+					default="media/jelastislide/1.jpg"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE1_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+					
+				<field
+					name="file1large"
+					type="media"
+					default="media/jelastislide/1_large.jpg"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE1_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+
+				<field
+					name="file1link"
+					type="text"
+					default="http://www.navjinder.com"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE1_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file2active"
+					type="radio"
+					default="yes"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE2_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+	
+				<field
+					name="file2"
+					type="media"
+					default="media/jelastislide/2.jpg"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE2_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+				
+				<field
+					name="file2large"
+					type="media"
+					default="media/jelastislide/2_large.jpg"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE2_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+
+				<field
+					name="file2link"
+					type="text"
+					default="http://www.navjinder.com"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE2_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
+
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file3active"
+					type="radio"
+					default="yes"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE3_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+	
+				<field
+					name="file3"
+					type="media"
+					default="media/jelastislide/3.jpg"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE3_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+					
+				<field
+					name="file3large"
+					type="media"
+					default="media/jelastislide/3_large.jpg"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE3_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+
+				<field
+					name="file3link"
+					type="text"
+					default="http://www.navjinder.com"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE3_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file4active"
+					type="radio"
+					default="yes"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE4_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+	
+				<field
+					name="file4"
+					type="media"
+					default="media/jelastislide/4.jpg"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE4_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+					
+				<field
+					name="file4large"
+					type="media"
+					default="media/jelastislide/5_large.jpg"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE4_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+
+				<field
+					name="file4link"
+					type="text"
+					default="http://www.navjinder.com"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE4_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
+
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file5active"
+					type="radio"
+					default="yes"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE5_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+	
+				<field
+					name="file5"
+					type="media"
+					default="media/jelastislide/5.jpg"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE5_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+					
+				<field
+					name="file5large"
+					type="media"
+					default="media/jelastislide/5_large.jpg"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE5_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+
+				<field
+					name="file5link"
+					type="text"
+					default="http://www.navjinder.com"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE5_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
+
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file6active"
+					type="radio"
+					default="yes"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE6_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+	
+				<field
+					name="file6"
+					type="media"
+					default="media/jelastislide/6.jpg"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE6_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+					
+				<field
+					name="file6large"
+					type="media"
+					default="media/jelastislide/6_large.jpg"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE6_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+
+				<field
+					name="file6link"
+					type="text"
+					default="http://www.navjinder.com"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE6_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
+
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file7active"
+					type="radio"
+					default="no"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE7_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+	
+				<field
+					name="file7"
+					type="media"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE7_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+					
+				<field
+					name="file7large"
+					type="media"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE7_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+
+				<field
+					name="file7link"
+					type="text"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE7_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
+
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file8active"
+					type="radio"
+					default="no"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE8_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+			
+				<field
+					name="file8"
+					type="media"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE8_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+					
+				<field
+					name="file8large"
+					type="media"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE8_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+
+				<field
+					name="file8link"
+					type="text"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE8_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
+
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file9active"
+					type="radio"
+					default="no"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE9_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+	
+				<field
+					name="file9"
+					type="media"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE9_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+					
+				<field
+					name="file9large"
+					type="media"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE9_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+
+				<field
+					name="file9link"
+					type="text"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE9_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
+
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file10active"
+					type="radio"
+					default="no"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE10_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+	
+				<field
+					name="file10"
+					type="media"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE10_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+					
+				<field
+					name="file10large"
+					type="media"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE10_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
+
+				<field
+					name="file10link"
+					type="text"
+					label="MOD_JELASTISLIDE_OPTION_SLIDE10_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
+
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

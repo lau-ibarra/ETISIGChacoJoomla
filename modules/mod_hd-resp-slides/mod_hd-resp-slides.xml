@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>HD-Responsive Slides</name>
+	<author>Hyde-Design</author>
+	<creationDate>February 2013</creationDate>
+	<copyright>2012</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>sales@hyde-design.co.uk</authorEmail>
+	<authorUrl>www.hyde-design.co.uk</authorUrl>
+	<version>1.1</version>
+	<description>A lightweight jQuery responsive slideshow for Joomla 2.5</description>
+
+	<files>
+	 <filename module="mod_hd-resp-slides">mod_hd-resp-slides.php</filename>
+	 <filename module="mod_hd-resp-slides">resp-slides.js</filename>
+	 <filename module="mod_hd-resp-slides">index.html</filename>
+	</files>
+	
+	<config>
+        <fields name="params">
+        <fieldset name="basic">
+		
+	<field name="loadjquery" type="list" default="yes" label="Load jQuery?" description="Select No if your template or any other other extensions use jQuery.">
+	 <option value="yes">Yes</option>
+	 <option value="no">No</option>
+	</field>
+<field name="widthmax" type="text" default="100%" label="Width" description="Max image width in pixels or percentage. The image will scale depending on this value."></field>
+<field name="heightmax" type="text" default="auto" label="Height" description="Max image height. If you are using images of different heights then setting a fixed height value will prevent the bottom of the slideshow from altering heights."></field>
+<field name="slidespeed" type="text" default="3500" label="Speed" description="The speed of the slideshow in milliseconds"></field>
+<field name="fadespeed" type="text" default="750" label="Fade" description="The speed of the fade transition in milliseconds"></field>
+<field type="spacer" name="myspacer-zero-break" hr="true" />
+
+<field name="imageone" type="media" label="First Image" description="Select the first image. All images are taken from the main images folder."></field>
+<field name="altone" type="text" default="" label="Alt Text" description="Alt text for this image."></field>
+<field type="spacer" name="myspacer-one-break" hr="true" />
+
+<field name="imagetwo" type="media" label="Second Image" description="Select the second image."></field>
+<field name="alttwo" type="text" default="" label="Alt Text" description="Alt text for this image."></field>
+<field type="spacer" name="myspacer-two-break" hr="true" />
+
+<field name="imagethree" type="media" label="Third Image" description="Select the third image."></field>
+<field name="altthree" type="text" default="" label="Alt Text" description="Alt text for this image."></field>
+<field type="spacer" name="myspacer-three-break" hr="true" />
+
+<field name="imagefour" type="media" label="Fourth Image" description="Select the fourth image."></field>
+<field name="altfour" type="text" default="" label="Alt Text" description="Alt text for this image."></field>
+<field type="spacer" name="myspacer-four-break" hr="true" />
+
+<field name="imagefive" type="media" label="Fifth Image" description="Select the fifth image."></field>
+<field name="altfive" type="text" default="" label="Alt Text" description="Alt text for this image."></field>
+<field type="spacer" name="myspacer-five-break" hr="true" />
+
+<field name="imagesix" type="media" label="Sixth Image" description="Select the sixth image."></field>
+<field name="altsix" type="text" default="" label="Alt Text" description="Alt text for this image."></field>	
+<field type="spacer" name="myspacer-six-break" hr="true" />
+		
+<field name="imageseven" type="media" label="Seventh Image" description="Select the seventh image."></field>
+<field name="altseven" type="text" default="" label="Alt Text" description="Alt text for this image."></field>
+<field type="spacer" name="myspacer-seven-break" hr="true" />
+
+<field name="imageeight" type="media" label="Eighth Image" description="Select the eighth image."></field>
+<field name="alteight" type="text" default="" label="Alt Text" description="Alt text for this image."></field>
+<field type="spacer" name="myspacer-eighth-break" hr="true" />
+
+<field name="imagenine" type="media" label="Ninth Image" description="Select the ninth image."></field>
+<field name="altnine" type="text" default="" label="Alt Text" description="Alt text for this image."></field>
+<field type="spacer" name="myspacer-nine-break" hr="true" />
+		
+<field name="imageten" type="media" label="Tenth Image" description="Select the tenth image."></field>
+<field name="altten" type="text" default="" label="Alt Text" description="Alt text for this image."></field>	
+<field type="spacer" name="myspacer-ten-break" hr="true" />
+			
+<field name="customcss" type="textarea" default="#hd-rs {background-color: black; padding: 5px;}" label="Additional CSS" description="Replace with your additional inline custom CSS." rows="20" cols="45"></field>
+			
+</fieldset>
+                       <fieldset name="advanced">
+        <field name="@spacer_general" type="spacer" default="Enter your code below, it will be rendered as is." label="" description="" />
+		<field name="urlsniffer" type="text" filter="raw" default="" label="URL Sniffer" description="Add an element of a URL here if you only wish the module to render on a page whose URL contains this element."></field>
+		<field name="browsersniffer" type="list" default="all" label="Browser Sniffer" description="Select if you wish your module to be rendered on a specific browser only.">
+             <option value="all">All Browsers</option>
+             <option value="msie">Internet Explorer</option>
+             <option value="firefox">FireFox</option>
+             <option value="safari">Safari</option>
+             <option value="chrome">Chrome</option>
+             <option value="opera">Opera</option>
+             <option value="iphone">iPhone</option>
+             <option value="ipad">iPad</option>
+             <option value="android">Android</option>
+             <option value="mobile">All mobile devices</option>
+             </field>
+	</fieldset>
+        </fields>
+	</config>
+	
+</extension>

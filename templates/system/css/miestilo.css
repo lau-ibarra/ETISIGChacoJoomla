@@ -1,0 +1,22 @@
+.buscar
+{
+  padding-top:10px;
+  padding-right:10px;
+}
+
+
+#lineacabecera{
+  position: relative;
+  margin:0;
+  padding:0;
+  z-index: 999;
+  clear: both;
+  width: 100%;
+  height:50px;
+  background: #1A1A1A;
+  background: -webkit-linear-gradient(top, #3C3C3C, #1A1A1A);
+  background: -moz-linear-gradient(top, #3C3C3C, #1A1A1A);
+  background: -o-linear-gradient(top, #3C3C3C, #1A1A1A);
+  background: -ms-linear-gradient(top, #3C3C3C, #1A1A1A);
+  background: linear-gradient(top, #3C3C3C, #1A1A1A);
+  border-radius: 5px;}

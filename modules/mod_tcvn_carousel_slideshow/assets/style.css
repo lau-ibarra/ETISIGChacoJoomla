@@ -1,0 +1,35 @@
+/*
+# ------------------------------------------------------------------------
+# TCVN Carousel Slideshow Module for Joomla 2.5
+# ------------------------------------------------------------------------
+# Copyright(C) 2008-2012 www.thecoders.vn. All Rights Reserved.
+# @license http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPL
+# Author: Thecoders.vn
+# Websites: http://Thecoders.com
+# ------------------------------------------------------------------------
+*/
+
+#tcvn_carousel_slideshow .shadow-left {
+	background: url(images/active-left-shadow.png) no-repeat;
+}
+#tcvn_carousel_slideshow .shadow-right {
+	background: url(images/active-right-shadow.png) no-repeat;
+}
+#tcvn_carousel_slideshow a.featured-link {
+	background: url(images/featured_active_link.png) no-repeat;
+}
+#tcvn_carousel_slideshow .featured-title {
+	background: url(images/featured-title-bg.png) no-repeat bottom center;
+}
+#tcvn_carousel_slideshow .description {
+	background: url(images/description-bg.png) no-repeat;
+}
+#tcvn_carousel_slideshow .gotoslide {
+	background: url(images/next-slide-overlay.png);
+}
+#tcvn_carousel_slideshow .next-block .gotoslide span {
+	background: url(images/featured-arrow.png) no-repeat;
+}
+#tcvn_carousel_slideshow .prev-block .gotoslide span {
+	background: url(images/featured-arrow-left.png) no-repeat;
+}
