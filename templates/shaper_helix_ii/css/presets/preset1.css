@@ -46,6 +46,7 @@ body.bg {
   background-image: linear-gradient(to bottom,#2778e3,#134991);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2777e2', endColorstr='#ff134991', GradientType=0);*/
+background-color: #134991;
 }
 #sp-header-wrapper .logo {
   background-image: url(../../images/presets/preset1/logo.png);
@@ -97,7 +98,7 @@ body.bg {
   border-top: 1px solid #043142;
 }
 #sp-footer-wrapper::after {
-  background: #0a6e93;
+  /*background: #0a6e93;*/
 }
 .sp-border {
   border-top: 1px solid #043142;
