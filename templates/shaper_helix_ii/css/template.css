@@ -1,3 +1,10 @@
+html {
+     height:100%
+}
+body {
+     height:100%
+}
+
 .clearfix {
   *zoom: 1;
 }
@@ -490,10 +497,28 @@ label.invalid {
   margin: 0;
 }
 #sp-main-body-wrapper {
-  padding: 30px 0;
+ 
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
+/*Footer abajo*/
+margin: auto;
+height: auto;
+min-height:80%;
+
+  padding: 0px;
+  /* equal to footer height */
+  margin-bottom: -142px; 
 }
+
+#sp-main-body-wrapper:after{
+width: 100%;
+height:150px;
+clear:both;
+
+content: "";
+  display: block;
+}
+
 #sp-bottom-wrapper {
   padding: 40px 0;
 }
@@ -546,14 +571,15 @@ ul.breadcrumb {
 #sp-footer-wrapper {
   padding: 0px 0;
   position: relative;
+
 }
 #sp-footer-wrapper::after {
   content: " ";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 1px;
+  height: 100px;
+display: block;
 }
 #sp-footer-wrapper ul li {
   display: inline-block;
@@ -563,9 +589,7 @@ ul.breadcrumb {
 #sp-footer-wrapper ul li a {
   color: #999;
 }
-#sp-footer-wrapper {
-  padding: 0px 0;
-}
+
 #sp-footer-wrapper ul {
   display: inline-block;
 }
@@ -604,16 +628,14 @@ ul.breadcrumb {
 }
 #sp-footer-wrapper .helix-framework .helix-logo {
   display: block;
-  max-width: 1170px;
-  max-height: 120px;
-  width: 100%;
+  width: 130px;
+  height: 40px;
   text-indent: -9999px;
   background: url(../images/helix-logo-white.png) no-repeat 0 0;
 }
 #sp-footer-wrapper .copyright {
   display: block;
 }
-
 button,
 input[type='submit'],
 input[type='button'],
@@ -887,9 +909,7 @@ submit.social:hover {
   padding: 0px;
   background-color: #134991;
 }
-#sp-main-body-wrapper {
-  padding: 0px;
-}
+
 #sp-breadcrumb {
   padding: 0px;
 }
@@ -902,9 +922,9 @@ submit.social:hover {
 .module.banner.green {
   margin-top: 10px;
 }
-#sp-bottom-wrapper,
 #sp-footer-wrapper {
   background: #134991;
+  padding-top: 0px;
 }
 .module {
   margin-top: 20px;

@@ -45,8 +45,11 @@
         <div class="chromeframe alert alert-danger" style="text-align:center">You are using an <strong>outdated</strong> browser. Please <a target="_blank" href="http://browsehappy.com/">upgrade your browser</a> or <a target="_blank" href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</div>
         <![endif]-->
         <?php
+ 
             $this->helix->layout();
+
             $this->helix->Footer();
+ 
         ?>
         <jdoc:include type="modules" name="debug" />
     </body>
