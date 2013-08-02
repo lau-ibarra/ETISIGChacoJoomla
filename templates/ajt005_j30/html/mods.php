@@ -1,1 +1,0 @@
-<div class="module"><p><a href="http://www.youtube.com/watch?v=ncORn_X9sk4" title="Joomla 3.0 Templates">Joomla Templates</a></p></div>
