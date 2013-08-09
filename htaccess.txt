@@ -74,3 +74,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* index.php [L]
 #
 ## End - Joomla! core SEF Section.
+
+php_value upload_max_filesize 40M
+php_value post_max_size 80M
+php_value max_execution_time 420
+
