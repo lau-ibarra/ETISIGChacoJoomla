@@ -93,6 +93,8 @@ $debug  = (boolean) $config->get('debug');
 				<hr />
 				<jdoc:include type="message" />
 				<jdoc:include type="component" />
+<div id="cfilogo">
+<img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template ?>/images/cfilogo.png" alt="CFI"/></div>
 			</div>
 			<noscript>
 				<?php echo JText::_('JGLOBAL_WARNJAVASCRIPT') ?>
